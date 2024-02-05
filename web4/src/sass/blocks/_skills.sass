@@ -1,0 +1,70 @@
+.skills
+	margin-top: 120px
+	height: 1024px
+	&__title
+		text-align: center
+		@include title_16
+		position: relative
+		&:before
+			content: ''
+			display: block
+			@include circleImg
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			top: - 6px
+	&__headline
+		text-align: center
+		@include title_36
+		margin-bottom: 25px
+	&__divide
+		width: 60px
+		margin: 0 auto 60px auto
+		height: 4px
+		background-color: $main_color
+	&__content
+		display: grid
+		grid-template: 270px 270px / repeat(4, 270px)
+		gap: 13px
+		padding: 0 10px
+		margin-bottom: 120px
+	&__elem
+		padding: 30px
+		border: 1px solid black
+		img
+			display: block
+			margin-bottom: 20px
+	&__elemTitle
+		@include title_14
+		margin-bottom: 15px
+	&__elemText
+		font-weight: 500
+		font-size: 12px
+		line-height: 18px
+	&__ability
+		display: grid
+		grid-template: 70px 70px / repeat(3, 350px)
+		gap: 30px 45px
+	&__skill
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+	&__skillTitle
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		height: 36px
+		div
+			@include title_14
+			&:first-child
+				position: relative
+				@include circle
+	&__skillLine
+		width: 350px
+		height: 14px
+		background: #E8E4DE
+		border-radius: 4px
+		div
+			height: 100%
+			background-color: $main_color
+			border-radius: 4px

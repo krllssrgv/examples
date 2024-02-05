@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <meta name="title" content="Мое портфолио">
+    <meta name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Мое портфолио">
+    <meta property="og:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
+    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Мое портфолио">
+    <meta property="twitter:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Favicon  -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon//favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/favicon//ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <section class="promo">
+        <div class="menu">
+            <div class="menu__overlay">
+                <div class="menu__container">
+                    <div class="menu__block">
+                    <div class="menu__close" onclick="closeMenu()">
+                        <svg width="26" height="26" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183717 1.30861 -0.183717 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183717 26.55 -0.183717 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z" fill="black"/>
+                        </svg>
+                    </div>
+    
+                    <nav class="menu__content">
+                        <ul>
+                            <li><a href="#">ПРО МЕНЯ</a></li>
+                            <li><a href="#">МОЙ ОПЫТ</a></li>
+                            <li><a href="#">МОИ НАВЫКИ</a></li>
+                            <li><a href="#">МОИ РАБОТЫ</a></li>
+                            <li><a href="#">ПРАЙС-ЛИСТ</a></li>
+                            <li><a href="#">КОНТАКТЫ</a></li>
+                        </ul>
+                    </nav>
+    
+                    <div class="menu__networks">
+                        <a href="#">
+                            <svg width="20" height="20" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 0C4.475 0 0 4.36167 0 9.74107C0 14.0457 2.865 17.6962 6.8375 18.9832C7.3375 19.0749 7.52083 18.7734 7.52083 18.5148C7.52083 18.2835 7.5125 17.6706 7.50833 16.8585C4.72667 17.4459 4.14 15.5517 4.14 15.5517C3.685 14.4274 3.0275 14.1267 3.0275 14.1267C2.12167 13.5228 3.0975 13.5352 3.0975 13.5352C4.10167 13.603 4.62917 14.5389 4.62917 14.5389C5.52083 16.0283 6.97 15.5979 7.54167 15.3493C7.63167 14.719 7.88917 14.2903 8.175 14.0466C5.95417 13.8029 3.62 12.9652 3.62 9.23304C3.62 8.16988 4.0075 7.30085 4.64917 6.61934C4.53667 6.37317 4.19917 5.3827 4.73667 4.04116C4.73667 4.04116 5.57417 3.78012 7.48667 5.03988C8.28667 4.82345 9.13667 4.71606 9.98667 4.7111C10.8367 4.71606 11.6867 4.82345 12.4867 5.03988C14.3867 3.78012 15.2242 4.04116 15.2242 4.04116C15.7617 5.3827 15.4242 6.37317 15.3242 6.61934C15.9617 7.30085 16.3492 8.16988 16.3492 9.23304C16.3492 12.9752 14.0117 13.7987 11.7867 14.0383C12.1367 14.3307 12.4617 14.928 12.4617 15.8408C12.4617 17.1444 12.4492 18.1918 12.4492 18.5082C12.4492 18.7635 12.6242 19.0683 13.1367 18.9708C17.1375 17.692 20 14.0391 20 9.74107C20 4.36167 15.5225 0 10 0Z" fill="#212121"/>
+                            </svg>
+                        </a>
+    
+                        <a href="#">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.7495 0L6.24951 0C2.79826 0 -0.000488281 2.79875 -0.000488281 6.25L-0.000488281 13.75C-0.000488281 17.2013 2.79826 20 6.24951 20L13.7495 20C17.2008 20 19.9995 17.2013 19.9995 13.75L19.9995 6.25C19.9995 2.79875 17.2008 0 13.7495 0ZM18.1245 13.75C18.1245 16.1625 16.162 18.125 13.7495 18.125L6.24951 18.125C3.83701 18.125 1.87451 16.1625 1.87451 13.75L1.87451 6.25C1.87451 3.8375 3.83701 1.875 6.24951 1.875L13.7495 1.875C16.162 1.875 18.1245 3.8375 18.1245 6.25L18.1245 13.75Z" fill="black"/>
+                                <path d="M9.99951 5C7.23826 5 4.99951 7.23875 4.99951 10C4.99951 12.7613 7.23826 15 9.99951 15C12.7608 15 14.9995 12.7613 14.9995 10C14.9995 7.23875 12.7608 5 9.99951 5ZM9.99951 13.125C8.27701 13.125 6.87451 11.7225 6.87451 10C6.87451 8.27625 8.27701 6.875 9.99951 6.875C11.722 6.875 13.1245 8.27625 13.1245 10C13.1245 11.7225 11.722 13.125 9.99951 13.125Z" fill="black"/>
+                                <path d="M15.3745 5.29123C15.7425 5.29123 16.0408 4.99295 16.0408 4.62499C16.0408 4.25703 15.7425 3.95874 15.3745 3.95874C15.0065 3.95874 14.7083 4.25703 14.7083 4.62499C14.7083 4.99295 15.0065 5.29123 15.3745 5.29123Z" fill="black"/>
+                            </svg>
+                        </a>
+    
+                        <a href="#">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.0698 0L2.9292 0C1.3139 0 -0.000488281 1.31439 -0.000488281 2.92969L-0.000488281 17.0703C-0.000488281 18.6856 1.3139 20 2.9292 20L8.82764 20L8.82764 12.9297L6.48389 12.9297L6.48389 9.41406L8.82764 9.41406L8.82764 7.03125C8.82764 5.09262 10.4046 3.51563 12.3433 3.51563L15.8979 3.51563L15.8979 7.03125L12.3433 7.03125L12.3433 9.41406L15.8979 9.41406L15.312 12.9297L12.3433 12.9297L12.3433 20L17.0698 20C18.6851 20 19.9995 18.6856 19.9995 17.0703L19.9995 2.92969C19.9995 1.31439 18.6851 0 17.0698 0Z" fill="black"/>
+                            </svg>
+                        </a>                     
+                    </div>
+                
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="promo__networks">
+            <a href="#" class="promo__network"><img src="icons/social/facebook.svg" alt=""></a>
+            <a href="#" class="promo__network"><img src="icons/social/instagram.svg" alt=""></a>
+            <a href="#" class="promo__network"><img src="icons/social/github.svg" alt=""></a>
+            <div class="promo__divide"></div>
+            <div class="promo__text"><div>Социальные сети</div></div>
+        </div>
+
+        <div class="hamburger" onclick="mainMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="container">
+            <div class="promo__subtitle">Меня зовут Kirill Savin</div>
+            <h1 class="promo__headline">Я web-разработчик из города Москва</h1>
+            <div class="promo__btns">
+                <a href="#" class="promo__btn">Портфолио</a>
+                <a href="#" class="promo__link">Про меня</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about__content">
+                <div class="about__img">
+                    <img src="img/main_photo.jpg" alt="">
+                </div>
+
+                <div class="about__main">
+                    <h2 class="about__name">Про меня</h2>
+
+                    <div class="about__headline">Меня зовут Kirill</div>
+
+                    <div class="about__line"></div>
+
+                    <div class="about__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum autem cupiditate alias earum, officiis necessitatibus deleniti! Excepturi suscipit labore nobis! Asperiores error magni repellendus velit molestias, totam repudiandae cum repellat? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam commodi dolores possimus, officia voluptatem temporibus nam aut voluptas saepe, earum aliquam minima eaque suscipit. Sed pariatur excepturi cum sit ea!
+                    </div>
+
+                    <div class="about__ican">
+                        <div class="about__item">
+                            <div class="about__icon">
+                                <svg width="24" height="28" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.235596 0V20.5205H9.00801V21.9877H7.40462V23.4526H20.3982V21.9877H18.7949V20.5205H27.5673V0H0.235596ZM17.1933 21.9877H10.6096V20.5205H17.1933V21.9877H17.1933ZM25.9658 19.0556H1.83712V16.1222H25.9657V19.0556H25.9658ZM25.9658 14.6573H1.83712V1.46494H25.9657V14.6573H25.9658Z" fill="black"/>
+                                </svg>
+                            </div>
+
+                            <div class="about__descr">
+                                <span>Web-разработка</span><br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus corrupti saepe culpa rem, deleniti ut, id accusamus fugiat quaerat ipsam deserunt vel non placeat excepturi! Quo aperiam fuga odio!
+                            </div>
+                        </div>
+
+                        <div class="about__item">
+                            <div class="about__icon">
+                                <svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.2406 0H2.13707C1.6842 0.000542615 1.25005 0.165337 0.929818 0.458245C0.609591 0.751153 0.429426 1.14827 0.428833 1.5625V22.6562C0.429426 23.0705 0.609591 23.4676 0.929818 23.7605C1.25005 24.0534 1.6842 24.2182 2.13707 24.2188H13.2406C13.6935 24.2182 14.1276 24.0534 14.4478 23.7605C14.7681 23.4676 14.9482 23.0705 14.9488 22.6562V1.5625C14.9482 1.14827 14.7681 0.751153 14.4478 0.458245C14.1276 0.165337 13.6935 0.000542615 13.2406 0V0ZM9.68746 0.78125L9.44724 1.5625H5.88717L5.67364 0.78125H9.68746ZM14.0947 22.6562C14.0944 22.8634 14.0043 23.0619 13.8442 23.2084C13.6841 23.3548 13.467 23.4372 13.2406 23.4375H2.13707C1.91063 23.4372 1.69356 23.3548 1.53344 23.2084C1.37333 23.0619 1.28325 22.8634 1.28295 22.6562V1.5625C1.28325 1.35538 1.37333 1.15683 1.53344 1.01037C1.69356 0.863918 1.91063 0.781521 2.13707 0.78125H4.79284L5.13929 2.04785C5.16238 2.13236 5.21569 2.20738 5.29075 2.261C5.36581 2.31461 5.4583 2.34374 5.55353 2.34375H9.77073C9.8638 2.34375 9.95432 2.31594 10.0285 2.26455C10.1027 2.21317 10.1565 2.14102 10.1818 2.05908L10.5747 0.78125H13.2406C13.467 0.781521 13.6841 0.863918 13.8442 1.01037C14.0043 1.15683 14.0944 1.35538 14.0947 1.5625V22.6562Z" fill="black"/>
+                                    <path d="M5.55355 21.875H2.56414C2.45088 21.875 2.34226 21.9162 2.26217 21.9894C2.18208 22.0627 2.13708 22.162 2.13708 22.2656C2.13708 22.3692 2.18208 22.4686 2.26217 22.5418C2.34226 22.6151 2.45088 22.6562 2.56414 22.6562H5.55355C5.66681 22.6562 5.77544 22.6151 5.85553 22.5418C5.93562 22.4686 5.98061 22.3692 5.98061 22.2656C5.98061 22.162 5.93562 22.0627 5.85553 21.9894C5.77544 21.9162 5.66681 21.875 5.55355 21.875Z" fill="black"/>
+                                    <path d="M7.26177 21.875H6.83471C6.72145 21.875 6.61282 21.9162 6.53274 21.9894C6.45265 22.0627 6.40765 22.162 6.40765 22.2656C6.40765 22.3692 6.45265 22.4686 6.53274 22.5418C6.61282 22.6151 6.72145 22.6562 6.83471 22.6562H7.26177C7.37503 22.6562 7.48366 22.6151 7.56375 22.5418C7.64384 22.4686 7.68883 22.3692 7.68883 22.2656C7.68883 22.162 7.64384 22.0627 7.56375 21.9894C7.48366 21.9162 7.37503 21.875 7.26177 21.875Z" fill="black"/>
+                                    <path d="M9.18973 9.82123C9.14164 9.79484 9.08834 9.77737 9.03287 9.76982C8.9774 9.76227 8.92084 9.76479 8.86643 9.77723C8.81202 9.78967 8.76083 9.81179 8.71577 9.84233C8.67071 9.87287 8.63266 9.91123 8.60381 9.95522L6.04145 13.8615C5.98318 13.9503 5.96587 14.0567 5.99334 14.1572C6.02081 14.2577 6.09081 14.3441 6.18793 14.3974C6.28506 14.4507 6.40135 14.4665 6.51123 14.4414C6.62112 14.4163 6.71558 14.3522 6.77386 14.2634L9.33621 10.3572C9.36507 10.3132 9.38417 10.2644 9.39242 10.2137C9.40068 10.1629 9.39793 10.1112 9.38432 10.0615C9.37072 10.0117 9.34654 9.96486 9.31315 9.92364C9.27976 9.88242 9.23782 9.84762 9.18973 9.82123Z" fill="black"/>
+                                    <path d="M10.5846 9.91206C10.5495 9.87201 10.5062 9.83866 10.4571 9.81392C10.4079 9.78918 10.3539 9.77354 10.2982 9.76788C10.1856 9.75646 10.0727 9.78643 9.98421 9.85118C9.89576 9.91593 9.83906 10.0102 9.82658 10.1132C9.81409 10.2161 9.84685 10.3194 9.91764 10.4003L11.4123 12.1093L9.91764 13.8183C9.84685 13.8992 9.81409 14.0025 9.82658 14.1055C9.83906 14.2085 9.89576 14.3027 9.98421 14.3675C10.0727 14.4322 10.1856 14.4622 10.2982 14.4508C10.4108 14.4394 10.5138 14.3875 10.5846 14.3066L12.2928 12.3535C12.3535 12.2842 12.3865 12.1981 12.3865 12.1093C12.3865 12.0206 12.3535 11.9345 12.2928 11.8652L10.5846 9.91206Z" fill="black"/>
+                                    <path d="M4.79301 14.3066C4.8638 14.3875 4.96682 14.4393 5.07942 14.4508C5.19201 14.4622 5.30495 14.4322 5.3934 14.3675C5.48184 14.3027 5.53854 14.2085 5.55103 14.1055C5.56351 14.0025 5.53076 13.8992 5.45997 13.8183L3.96526 12.1093L5.45997 10.4003C5.49502 10.3603 5.5211 10.3143 5.53672 10.265C5.55235 10.2158 5.55721 10.1641 5.55103 10.1131C5.54485 10.0622 5.52774 10.0128 5.5007 9.96782C5.47365 9.92287 5.43719 9.88324 5.3934 9.85118C5.34961 9.81911 5.29934 9.79526 5.24546 9.78097C5.19159 9.76667 5.13517 9.76223 5.07942 9.76788C5.02367 9.77354 4.96968 9.78918 4.92053 9.81392C4.87139 9.83866 4.82806 9.87201 4.79301 9.91206L3.08478 11.8652C3.02413 11.9345 2.99109 12.0206 2.99109 12.1093C2.99109 12.1981 3.02413 12.2842 3.08478 12.3535L4.79301 14.3066Z" fill="black"/>
+                                </svg>
+                            </div>
+
+                            <div class="about__descr">
+                                <span>Разработка приложений</span><br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus corrupti saepe culpa rem, deleniti ut, id accusamus fugiat quaerat ipsam deserunt vel non placeat excepturi! Quo aperiam fuga odio!
+                            </div>
+                        </div>
+                        
+                        <div class="about__item">
+                            <div class="about__icon">
+                                <svg width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.6174 0H1.81235C1.34487 0.000560118 0.896714 0.17067 0.566157 0.473027C0.2356 0.775384 0.0496236 1.18531 0.0490112 1.6129V15.3226C0.0496236 15.7502 0.2356 16.1601 0.566157 16.4625C0.896714 16.7648 1.34487 16.9349 1.81235 16.9355H10.899L10.3111 18.5484H8.8657C8.74878 18.5484 8.63665 18.5909 8.55398 18.6665C8.47131 18.7421 8.42486 18.8447 8.42486 18.9516V19.7581H4.45735C4.34044 19.7581 4.22831 19.8005 4.14564 19.8762C4.06297 19.9518 4.01652 20.0543 4.01652 20.1613C4.01652 20.2682 4.06297 20.3708 4.14564 20.4464C4.22831 20.522 4.34044 20.5645 4.45735 20.5645H23.8541C23.971 20.5645 24.0831 20.522 24.1658 20.4464C24.2485 20.3708 24.2949 20.2682 24.2949 20.1613C24.2949 20.0543 24.2485 19.9518 24.1658 19.8762C24.0831 19.8005 23.971 19.7581 23.8541 19.7581H19.0049V18.9516C19.0049 18.8447 18.9584 18.7421 18.8758 18.6665C18.7931 18.5909 18.681 18.5484 18.5641 18.5484H17.1187L16.5307 16.9355H25.6174C26.0849 16.9349 26.533 16.7648 26.8636 16.4625C27.1942 16.1601 27.3801 15.7502 27.3807 15.3226V1.6129C27.3801 1.18531 27.1942 0.775384 26.8636 0.473027C26.533 0.17067 26.0849 0.000560118 25.6174 0ZM18.1232 19.3548V19.7581H9.30653V19.3548H18.1232ZM11.2407 18.5484L11.8287 16.9355H15.6011L16.1891 18.5484H11.2407ZM26.4991 15.3226C26.4988 15.5364 26.4058 15.7413 26.2405 15.8925C26.0752 16.0437 25.8511 16.1288 25.6174 16.129H1.81235C1.57861 16.1288 1.35453 16.0437 1.18925 15.8925C1.02397 15.7413 0.930986 15.5364 0.93068 15.3226V14.5161H26.4991V15.3226ZM7.52446 10.0806L7.35915 13.7097H6.84557L6.68026 10.0806H7.52446ZM6.74088 9.27419L7.03513 7.66129H7.16959L7.46384 9.27419H6.74088ZM7.10236 6.85484C6.62461 6.85484 6.22069 6.30091 6.22069 5.64516C6.22069 5.23135 6.68247 4.63004 7.10126 4.20615C7.47872 4.58921 7.98403 5.20161 7.98403 5.64516C7.98403 6.30091 7.58011 6.85484 7.10236 6.85484ZM11.8997 6.04839L11.9515 6.14365V6.45161H10.1882V6.14365L10.24 6.04839H11.8997ZM10.6808 5.24194L11.0699 4.53075L11.4589 5.24194H10.6808ZM11.9515 7.25806V13.6593C11.9517 13.6761 11.953 13.693 11.9554 13.7097H10.1843C10.1867 13.693 10.188 13.6761 10.1882 13.6593V7.25806H11.9515ZM15.919 5.64516H17.2416V6.45161H16.8007C16.6838 6.45161 16.5717 6.4941 16.489 6.56971C16.4063 6.64533 16.3599 6.7479 16.3599 6.85484C16.3599 6.96178 16.4063 7.06434 16.489 7.13996C16.5717 7.21558 16.6838 7.25806 16.8007 7.25806H17.2416V8.06452H15.919C15.8021 8.06452 15.69 8.107 15.6073 8.18262C15.5247 8.25824 15.4782 8.3608 15.4782 8.46774C15.4782 8.57468 15.5247 8.67725 15.6073 8.75287C15.69 8.82849 15.8021 8.87097 15.919 8.87097H17.2416V9.67742H16.8007C16.6838 9.67742 16.5717 9.7199 16.489 9.79552C16.4063 9.87114 16.3599 9.9737 16.3599 10.0806C16.3599 10.1876 16.4063 10.2901 16.489 10.3658C16.5717 10.4414 16.6838 10.4839 16.8007 10.4839H17.2416V11.2903H15.919C15.8021 11.2903 15.69 11.3328 15.6073 11.4084C15.5247 11.484 15.4782 11.5866 15.4782 11.6935C15.4782 11.8005 15.5247 11.9031 15.6073 11.9787C15.69 12.0543 15.8021 12.0968 15.919 12.0968H17.2416V13.7097H14.1557V4.03226H17.2416V4.83871H15.919C15.8021 4.83871 15.69 4.88119 15.6073 4.95681C15.5247 5.03243 15.4782 5.13499 15.4782 5.24194C15.4782 5.34888 15.5247 5.45144 15.6073 5.52706C15.69 5.60268 15.8021 5.64516 15.919 5.64516ZM21.2091 10.4839V13.6593C21.2092 13.6761 21.2105 13.693 21.2129 13.7097H19.4419C19.4443 13.693 19.4456 13.6761 19.4457 13.6593V10.4839H21.2091ZM19.4457 9.67742V9.36946L20.3274 7.75655L21.2091 9.36946V9.67742H19.4457ZM26.4991 13.7097H22.0869C22.0893 13.693 22.0906 13.6761 22.0907 13.6593V9.27419C22.0907 9.21159 22.0748 9.14984 22.0444 9.09375L20.7219 6.6744C20.6852 6.60743 20.6289 6.55113 20.5592 6.51178C20.4896 6.47243 20.4093 6.4516 20.3274 6.4516C20.2455 6.4516 20.1652 6.47243 20.0956 6.51178C20.0259 6.55113 19.9695 6.60743 19.9328 6.6744L18.6103 9.09375C18.58 9.14984 18.5641 9.21159 18.5641 9.27419V13.6593C18.5642 13.6761 18.5655 13.693 18.5679 13.7097H18.1232V3.62903C18.1232 3.52209 18.0768 3.41953 17.9941 3.34391C17.9114 3.26829 17.7993 3.22581 17.6824 3.22581H13.7149C13.598 3.22581 13.4858 3.26829 13.4032 3.34391C13.3205 3.41953 13.274 3.52209 13.274 3.62903V13.7097H12.8293C12.8317 13.693 12.833 13.6761 12.8332 13.6593V6.04839C12.8331 5.98578 12.8173 5.92404 12.7869 5.86794L11.4644 3.44859C11.4277 3.38163 11.3714 3.32532 11.3017 3.28598C11.232 3.24663 11.1518 3.22579 11.0699 3.22579C10.988 3.22579 10.9077 3.24663 10.838 3.28598C10.7684 3.32532 10.712 3.38163 10.6753 3.44859L9.35282 5.86794C9.32244 5.92404 9.3066 5.98578 9.30653 6.04839V13.6593C9.3067 13.6761 9.30799 13.693 9.31039 13.7097H8.24137L8.42431 9.69405C8.42486 9.68498 8.42431 9.67591 8.42431 9.66633V9.65423C8.42329 9.64004 8.42145 9.62591 8.4188 9.6119V9.61089L8.01103 7.37248C8.52295 7.01915 8.8657 6.37702 8.8657 5.64516C8.8657 4.60887 7.55256 3.46119 7.40268 3.33367C7.321 3.26442 7.21373 3.22594 7.10236 3.22594C6.99099 3.22594 6.88372 3.26442 6.80204 3.33367C6.65216 3.46119 5.33902 4.60887 5.33902 5.64516C5.33902 6.37702 5.68177 7.01915 6.19369 7.37248L5.78592 9.61089V9.6119C5.78327 9.62591 5.78143 9.64004 5.78041 9.65423V9.66633C5.78041 9.67591 5.77986 9.68498 5.78041 9.69405L5.96336 13.7097H0.93068V1.6129C0.930986 1.3991 1.02397 1.19414 1.18925 1.04297C1.35453 0.891787 1.57861 0.806732 1.81235 0.806452H25.6174C25.8511 0.806732 26.0752 0.891787 26.2405 1.04297C26.4058 1.19414 26.4988 1.3991 26.4991 1.6129V13.7097Z" fill="black"/>
+                                    <path d="M4.89822 14.9193H2.25321C2.1363 14.9193 2.02417 14.9618 1.9415 15.0374C1.85882 15.113 1.81238 15.2156 1.81238 15.3225C1.81238 15.4295 1.85882 15.532 1.9415 15.6077C2.02417 15.6833 2.1363 15.7258 2.25321 15.7258H4.89822C5.01514 15.7258 5.12726 15.6833 5.20994 15.6077C5.29261 15.532 5.33905 15.4295 5.33905 15.3225C5.33905 15.2156 5.29261 15.113 5.20994 15.0374C5.12726 14.9618 5.01514 14.9193 4.89822 14.9193Z" fill="black"/>
+                                    <path d="M6.66158 14.9193H6.22074C6.10383 14.9193 5.9917 14.9618 5.90902 15.0374C5.82635 15.113 5.77991 15.2156 5.77991 15.3225C5.77991 15.4295 5.82635 15.532 5.90902 15.6077C5.9917 15.6833 6.10383 15.7258 6.22074 15.7258H6.66158C6.77849 15.7258 6.89062 15.6833 6.97329 15.6077C7.05597 15.532 7.10241 15.4295 7.10241 15.3225C7.10241 15.2156 7.05597 15.113 6.97329 15.0374C6.89062 14.9618 6.77849 14.9193 6.66158 14.9193Z" fill="black"/>
+                                    <path d="M11.0699 7.66125C10.953 7.66125 10.8409 7.70374 10.7582 7.77936C10.6755 7.85498 10.6291 7.95754 10.6291 8.06448V12.5C10.6291 12.6069 10.6755 12.7095 10.7582 12.7851C10.8409 12.8607 10.953 12.9032 11.0699 12.9032C11.1868 12.9032 11.299 12.8607 11.3816 12.7851C11.4643 12.7095 11.5108 12.6069 11.5108 12.5V8.06448C11.5108 7.95754 11.4643 7.85498 11.3816 7.77936C11.299 7.70374 11.1868 7.66125 11.0699 7.66125Z" fill="black"/>
+                                    <path d="M20.3274 10.8871C20.2105 10.8871 20.0983 10.9296 20.0157 11.0052C19.933 11.0808 19.8865 11.1834 19.8865 11.2903V12.5C19.8865 12.6069 19.933 12.7095 20.0157 12.7851C20.0983 12.8607 20.2105 12.9032 20.3274 12.9032C20.4443 12.9032 20.5564 12.8607 20.6391 12.7851C20.7218 12.7095 20.7682 12.6069 20.7682 12.5V11.2903C20.7682 11.1834 20.7218 11.0808 20.6391 11.0052C20.5564 10.9296 20.4443 10.8871 20.3274 10.8871Z" fill="black"/>
+                                    <path d="M2.25321 2.41937H5.77989C5.8968 2.41937 6.00893 2.37688 6.0916 2.30126C6.17428 2.22564 6.22072 2.12308 6.22072 2.01614C6.22072 1.9092 6.17428 1.80664 6.0916 1.73102C6.00893 1.6554 5.8968 1.61292 5.77989 1.61292H2.25321C2.1363 1.61292 2.02417 1.6554 1.9415 1.73102C1.85882 1.80664 1.81238 1.9092 1.81238 2.01614C1.81238 2.12308 1.85882 2.22564 1.9415 2.30126C2.02417 2.37688 2.1363 2.41937 2.25321 2.41937Z" fill="black"/>
+                                    <path d="M2.25321 3.62908H3.13488C3.2518 3.62908 3.36393 3.5866 3.4466 3.51098C3.52927 3.43536 3.57572 3.3328 3.57572 3.22586C3.57572 3.11892 3.52927 3.01635 3.4466 2.94073C3.36393 2.86511 3.2518 2.82263 3.13488 2.82263H2.25321C2.1363 2.82263 2.02417 2.86511 1.9415 2.94073C1.85882 3.01635 1.81238 3.11892 1.81238 3.22586C1.81238 3.3328 1.85882 3.43536 1.9415 3.51098C2.02417 3.5866 2.1363 3.62908 2.25321 3.62908Z" fill="black"/>
+                                    <path d="M23.4132 12.9033H25.1766C25.2935 12.9033 25.4056 12.8608 25.4883 12.7852C25.571 12.7095 25.6174 12.607 25.6174 12.5C25.6174 12.3931 25.571 12.2905 25.4883 12.2149C25.4056 12.1393 25.2935 12.0968 25.1766 12.0968H23.4132C23.2963 12.0968 23.1842 12.1393 23.1015 12.2149C23.0189 12.2905 22.9724 12.3931 22.9724 12.5C22.9724 12.607 23.0189 12.7095 23.1015 12.7852C23.1842 12.8608 23.2963 12.9033 23.4132 12.9033Z" fill="black"/>
+                                    <path d="M24.7358 11.6935H25.1766C25.2935 11.6935 25.4056 11.6511 25.4883 11.5754C25.571 11.4998 25.6174 11.3973 25.6174 11.2903C25.6174 11.1834 25.571 11.0808 25.4883 11.0052C25.4056 10.9296 25.2935 10.8871 25.1766 10.8871H24.7358C24.6188 10.8871 24.5067 10.9296 24.424 11.0052C24.3414 11.0808 24.2949 11.1834 24.2949 11.2903C24.2949 11.3973 24.3414 11.4998 24.424 11.5754C24.5067 11.6511 24.6188 11.6935 24.7358 11.6935Z" fill="black"/>
+                                </svg>
+                            </div>
+
+                            <div class="about__descr">
+                                <span>UI/UX Design</span><br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus corrupti saepe culpa rem, deleniti ut, id accusamus fugiat quaerat ipsam deserunt vel non placeat excepturi! Quo aperiam fuga odio!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantage">
+        <div class="container">
+            <h2 class="advantage__title">Опыт</h2>
+
+            <div class="advantage__headline">Чем я буду полезен</div>
+
+            <div class="advantage__divide"></div>
+
+            <div class="advantage__content">
+                <div class="advantage__column">
+                    <div class="advantage__lines">
+                        <div class="advantage__circle"></div>
+                        <div class="advantage__line1"></div>
+                        <div class="advantage__line2"></div>
+                        <div class="advantage__line3"></div>
+                        <div class="advantage__line4"></div>
+                        <div class="advantage__line5"></div>
+                    </div>
+
+                    <div class="advantage__itemCont">
+                        <h3 class="advantage__columnName">Образование</h3>
+                    
+                            <div class="advantage__item">
+                                <div class="advantage__itemHead">
+                                    <div class="advantage__itemImg">
+                                        <img src="icons/experience/university.svg" alt="">
+                                    </div>
+
+                                    <div class="advantage__itemName">
+                                        <span>МГТУ им. Н. Э. Баумана</span><br>
+                                        Диплом магистра | Москва (2014-2020)
+                                    </div>
+                                </div>
+
+                                <div class="advantage__itemText">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero iusto ipsa consequuntur dolore, quo, magnam exercitationem assumenda dicta labore provident ea qui? Ab aperiam qui nisi error est officia accusamus.
+                                </div>
+                            </div>
+                    </div>   
+                </div>
+
+                <div class="advantage__column"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <h2 class="skills__title">Навыки</h2>
+
+            <div class="skills__headline">Что я использую в работе</div>
+
+            <div class="skills__divide"></div>
+
+            <div class="skills__content">
+                <div class="skills__elem">
+                    <img src="icons/skills/html5.svg" alt="">
+                    <div class="skills__elemTitle">HTML5</div>
+                    <div class="skills__elemText">
+                        Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта
+                    </div>
+                </div>
+
+                <div class="skills__elem">
+                    <img src="icons/skills/css3.svg" alt="">
+                    <div class="skills__elemTitle">CSS3</div>
+                    <div class="skills__elemText">
+                        Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!
+                    </div>
+                </div>
+
+                <div class="skills__elem">
+                    <img src="icons/skills/js.svg" alt="">
+                    <div class="skills__elemTitle">Java Script</div>
+                    <div class="skills__elemText">
+                        Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое
+                    </div>
+                </div>
+
+                <div class="skills__elem">
+                    <img src="icons/skills/jquery.svg" alt="">
+                    <div class="skills__elemTitle">Jquery</div>
+                    <div class="skills__elemText">
+                        Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует
+                    </div>
+                </div>
+
+                <div class="skills__elem">
+                    <img src="icons/skills/react.svg" alt="">
+                    <div class="skills__elemTitle">React</div>
+                    <div class="skills__elemText">
+                        Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели
+                    </div>
+                </div>
+
+                <div class="skills__elem">
+                    <img src="icons/skills/node.js.svg" alt="">
+                    <div class="skills__elemTitle">Node.js</div>
+                    <div class="skills__elemText">
+                        Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит
+                    </div>
+                </div>
+
+                <div class="skills__elem">
+                    <img src="icons/skills/mongo.db.svg" alt="">
+                    <div class="skills__elemTitle">Mongo.db</div>
+                    <div class="skills__elemText">
+                        Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="skills__ability">
+                <div class="skills__skill">
+                    <div class="skills__skillTitle">
+                        <div class="lineName">Создание сайтов</div>
+                        <div class="percent">100%</div>
+                    </div>
+                    <div class="skills__skillLine">
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="skills__skill">
+                    <div class="skills__skillTitle">
+                        <div class="lineName">Создание приложений</div>
+                        <div class="percent">85%</div>
+                    </div>
+                    <div class="skills__skillLine">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="skills__skill">
+                    <div class="skills__skillTitle">
+                        <div class="lineName">Работа с данными</div>
+                        <div class="percent">90%</div>
+                    </div>
+                    <div class="skills__skillLine">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="skills__skill">
+                    <div class="skills__skillTitle">
+                        <div class="lineName">Креативность</div>
+                        <div class="percent">75%</div>
+                    </div>
+                    <div class="skills__skillLine">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="skills__skill">
+                    <div class="skills__skillTitle">
+                        <div class="lineName">Создание дизайна</div>
+                        <div class="percent">90%</div>
+                    </div>
+                    <div class="skills__skillLine">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="skills__skill">
+                    <div class="skills__skillTitle">
+                        <div class="lineName">Soft skills</div>
+                        <div class="percent">95%</div>
+                    </div>
+                    <div class="skills__skillLine">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="profile">
+        <div class="container">
+            <h2 class="profile__title">Портфолио</h2>
+
+            <div class="profile__headline">Мои работы</div>
+
+            <div class="profile__divide"></div>
+
+            <div class="profile__content">
+                <img src="img/works/uber.jpg" alt="" class="profile__item">
+                <img src="img/works/pulse.jpg" alt="" class="profile__item">
+                <img src="img/works/bread.jpg" alt="" class="profile__item">
+                <img src="img/works/plans.jpg" alt="" class="profile__item profile__item-one">
+                <img src="img/works/ipad.jpg" alt="" class="profile__item">
+                <img src="img/works/mac.jpg" alt="" class="profile__item-two">
+            </div>
+        </div>
+    </section>
+
+    <section class="price">
+        <div class="container">
+            <h2 class="price__title">Прайс-лист</h2>
+
+            <div class="price__divide"></div>
+
+            <div class="price__content">
+                <div class="price__elem">
+                    <div class="price__elemHead">
+                        <div class="price__elemTitle">Landing-page</div>
+                        <div class="price__elemPrice">от 8000 руб.</div>
+                    </div>
+
+                    <div class="price__elemText">Одностраничный сайт для презентации услуг/товаров/...</div>
+                </div>
+
+                <div class="price__elem">
+                    <div class="price__elemHead">
+                        <div class="price__elemTitle">Web-приложение</div>
+                        <div class="price__elemPrice">от 28000 руб.</div>
+                    </div>
+
+                    <div class="price__elemText">Приложение внутри браузера для лучшего комфорта</div>
+                </div>
+
+                <div class="price__elem">
+                    <div class="price__elemHead">
+                        <div class="price__elemTitle">Корпоративный сайт</div>
+                        <div class="price__elemPrice">от 20000 руб.</div>
+                    </div>
+
+                    <div class="price__elemText">Сайт для вашего бизнеса или компании</div>
+                </div>
+
+                <div class="price__elem">
+                    <div class="price__elemHead">
+                        <div class="price__elemTitle">Android/IOS Приложение</div>
+                        <div class="price__elemPrice">от 25000 руб.</div>
+                    </div>
+
+                    <div class="price__elemText">Приложение для смартфона любой ОС</div>
+                </div>
+
+                <div class="price__elem">
+                    <div class="price__elemHead">
+                        <div class="price__elemTitle">Интернет-магазин</div>
+                        <div class="price__elemPrice">от 30000 руб.</div>
+                    </div>
+
+                    <div class="price__elemText">Инструмент для ваших продаж в сети</div>
+                </div>
+
+                <div class="price__elem">
+                    <div class="price__elemHead">
+                        <div class="price__elemTitle">Дизайн</div>
+                        <div class="price__elemPrice">Индивидуально</div>
+                    </div>
+
+                    <div class="price__elemText">Создам дизайн для вашего сайта/приложения...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__container">
+                <img src="img/main_photo.jpg" alt="" class="contacts__img">
+
+                <div class="contacts__main">
+                    <h2 class="contacts__headline">Контакты</h2>
+
+                    <div class="contacts__title">Свяжитесь со мной</div>
+
+                    <div class="contacts__divide"></div>
+
+                    <div class="contacts__subtitle">Любым удобным для вас способом:</div>
+
+                    <div class="contacts__networks">
+                        <img src="icons/networks/Facebook.svg" alt="">
+                        <img src="icons/networks/Telegram.svg" alt="">
+                        <img src="icons/networks/Instagram.svg" alt="">
+                    </div>
+
+                    <div class="contacts__subtitle">Или оставьте ваши данные и я сам вам напишу:</div>
+
+                    <div class="contacts__form">
+                        <form action="">
+                            <div class="contacts__input">
+                                <input type="text" name="name">
+                                <label for="name">Ваше имя</label>
+                            </div>
+
+                            <div class="contacts__input">
+                                <input type="text" name="name">
+                                <label for="name">Ваша почта</label>
+                            </div>
+                            
+                            <div class="contacts__textarea">
+                                <textarea name="message" id="" cols="30" rows="10"></textarea>
+                                <label for="message">Сообщение</label>
+                            </div>
+
+                            <div class="contacts__btn">
+                                <input type="submit" value="Отправить сообщение">
+                                <div class="contacts__privacy">
+                                    <input name="privacy" type="checkbox">
+                                    <div>Я согласен(а) с <a href="#">политикой конфиденциальности</a></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

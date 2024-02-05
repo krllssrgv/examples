@@ -1,0 +1,69 @@
+.advantage
+	margin-top: 120px
+	text-align: center
+	position: relative
+	&__title
+		@include title_16
+		position: relative
+		&:before
+			content: ''
+			display: block
+			@include circleImg
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			top: - 6px
+	&__headline
+		@include title_36
+		margin-bottom: 25px
+	&__divide
+		margin: 0 auto 60px auto
+		background-color: $main_color
+		width: 60px
+		height: 4px
+	&__content
+		padding: 0 90px 0 65px
+		height: 400px
+		display: grid
+		grid-template-columns: 425px 425px
+		column-gap: 135px
+		ul
+			list-style-type: none
+	&__column
+		position: relative
+		display: flex
+		flex-direction: row
+	&__lines
+		width: 50px
+		height: 100%
+	&__columnName
+		@include title_20
+		margin-bottom: 45px
+		position: relative
+		text-align: left
+	&__itemCont
+		width: 375px
+	&__itemHead
+		display: flex
+		flex-direction: row
+		position: relative
+		height: 36px
+		margin-bottom: 12px
+	&__itemImg
+		@include circleImg
+		position: relative
+		margin-right: 20px
+		img
+			position: absolute
+	&__itemName
+		font-weight: 500
+		font-size: 12px
+		line-height: 18px
+		text-align: left
+		span
+			@include title_14
+	&__itemText
+		font-weight: 500
+		font-size: 12px
+		line-height: 18px
+		text-align: left

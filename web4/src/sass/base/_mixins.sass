@@ -1,0 +1,39 @@
+@mixin title_36
+    font-weight: 700
+    font-size: 36px
+    line-height: 60px
+
+@mixin title_20
+    font-weight: 700
+    font-size: 20px
+    line-height: 30px
+
+@mixin title_16
+    font-weight: 700
+    font-size: 16px
+    line-height: 24px
+
+@mixin title_14
+    font-weight: 700
+    font-size: 14px
+    line-height: 21px
+
+@mixin circle
+    &::before
+        width: 36px
+        height: 36px
+        content: ''
+        display: block
+        border-radius: 50%
+        position: absolute
+        top: -8px
+        left: -10px
+        z-index: -1
+        background-color: $main_color
+
+@mixin circleImg
+    width: 36px
+    height: 36px
+    border-radius: 50%
+    z-index: -1
+    background-color: $main_color

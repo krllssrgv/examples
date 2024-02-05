@@ -1,0 +1,229 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+}
+
+nav {
+    height: 50px;
+    background: #212121;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu_item {
+    border-right: 2px dotted black;
+    padding-right: 28px;
+}
+
+.menu_link {
+    font-weight: 300;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.underheader {
+    height: 84px;
+    background: rgba(0, 0, 0, .6);
+    position: relative;
+    z-index: 2;
+}
+
+.uh_logo {
+    max-width: 100%;
+    margin-top: 19px;
+    display: block;
+}
+
+.uh_afisha {
+    margin-top: 6px;
+    font-weight: 100;
+    font-size: 13px;
+    color: white;
+}
+
+.uh_call {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.uh_phone {
+    display: block;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 8px;
+}
+
+.uh_btn {
+    font-weight: 400;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 46px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    width: 172px;
+    height: 46px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    margin-top: 20px;
+}
+
+
+.promo {
+    min-height: 800px;
+    background: url('../img/uber_bg.svg') center center/cover no-repeat;
+    padding: 150px 0 135px 0;
+    position: relative;
+    top: 50px;
+    z-index: 1;
+}
+
+.promo_header {
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.promo_unheader {
+    margin-top: 22px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.promo_text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 35px;
+}
+
+.promo_btn {
+    width: 259px;
+    height: 63px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    margin: 115px auto 0 auto;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    border: none;
+}
+
+
+.reason {
+    min-height: 767px;
+    padding: 18px 38px 0 38px;
+    position: relative;
+    top: 50px;
+}
+
+.reason_ability {
+    width: 113px;
+    height: 24px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 24px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    background-color: black;
+}
+
+.reason_headline {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+
+.reason_facts {
+    margin-top: 16px;
+}
+
+.reason_fact {
+    min-height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.reason_fact:last-child {
+    margin-bottom: 0;
+}
+
+.reason_fact_img {
+    width: 116px;
+    height: 116px;
+    background: #1EACC7;
+    margin-right: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: flex-start;
+    flex: none;
+}
+
+.reason_fact_text {
+    min-height: 150px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: black;
+}
+
+.reason_fact_headline {
+    color: #1EACC7;
+}
+
+
+.app {
+    min-height: 864px;
+    margin-top: 64px;
+    position: relative;
+    top: 50px;
+}

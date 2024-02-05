@@ -1,0 +1,46 @@
+@font-face
+	font-family: MuseoSans
+	src: url('../fonts/MuseoSans.ttf')
+
+*
+	font-family: MuseoSans, sans-serif
+html
+	scroll-behavior: smooth
+	
+@import "animations"
+@import "buttons"
+@import "promo"
+@import "header"
+@import "advantages"
+@import "consult"
+@import "slider"
+@import "shop"
+@import "reviews"
+@import "footer"
+@import "windows"
+
+iframe
+	width: 100%
+	height: 630px
+	frameborder: 0
+
+.pageup
+	display: none
+	width: 50px
+	height: 50px
+	position: fixed
+	bottom: 50px
+	right: 50px
+	justify-content: center
+	align-items: center
+	z-index: 5
+	background-color: red
+	transition: .5s all
+	border-radius: 50%
+	img
+		width: 32px
+		transition: .3s all
+	&:hover
+		cursor: pointer
+		img
+			width: 38px

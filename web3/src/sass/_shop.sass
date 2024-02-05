@@ -1,0 +1,146 @@
+.shop
+    min-height: 460px
+    padding-bottom: 80px
+    &__headline
+        font-size: 30px
+        line-height: 45px
+        text-align: center
+        margin-bottom: 0
+    &__tabs
+        margin: 50px auto 0 auto
+        width: 680px
+        height: 50px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+    &__tab
+        text-transform: uppercase
+        font-size: 18px
+        line-height: 50px
+        height: 50px
+        width: 220px
+        text-align: center
+        margin: 0 5px
+        border: 1px solid grey
+        transform: skew(-25deg)
+        color: black
+        transition: .5s all
+        background-color: white
+        div
+            transform: skew(25deg)
+        &-active
+            background-color: red
+            color: white
+        &:hover
+            cursor: pointer
+            box-shadow: 3px 3px 20px red
+    &__content
+        display: none
+        margin: 60px auto 0 auto
+        width: 934px
+        flex-direction: row
+        justify-content: space-between
+        flex-wrap: wrap
+        &-active
+            display: flex
+
+.product
+    width: 298px
+    min-height: 442px
+    border: 2px solid grey
+    padding: 20px
+    position: relative
+    margin-bottom: 20px
+    &__img
+        display: block
+        margin: 0 auto 
+        width: 140px
+    &__name
+        text-align: center
+        margin-top: 15px
+        font-size: 18px
+        line-height: 25px
+        font-weight: bold
+    &__descr
+        margin-top: 15px
+        text-align: center
+        font-size: 16px
+        line-height: 22px
+    &__more
+        margin-top: 10px
+        text-align: center
+        font-size: 14px
+        line-height: 14px
+        color: red
+        text-transform: uppercase
+        text-decoration: underline
+        &:hover
+            cursor: pointer
+    &__buy
+        margin-top: 17px
+        border-top: 1px solid grey
+        height: 64px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        padding-top: 20px
+    &__price
+        height: 44px
+    &__last-price
+        text-decoration: line-through
+        font-size: 14px
+        line-height: 14px
+        color: grey
+    &__new-price
+        font-size: 20px
+        line-height: 20px
+    &__button
+        display: block
+        width: 135px
+        height: 44px
+        background-color: red
+        line-height: 44px
+        text-align: center
+        text-decoration: none
+        color: white
+        border-radius: 5px
+        &:hover
+            text-decoration: none
+            color: white
+            cursor: pointer
+    &__info
+        display: none
+        z-index: 4
+        position: absolute
+        width: calc(100% - 40px)
+        height: calc(100% - 104px)
+        top: 20px
+        background-color: white
+        transition: .5s all
+        &-active
+            display: block
+        ul
+            padding-left: 20px
+            list-style-type: square
+            color: red
+    &__paragraph
+        font-size: 14px
+        line-height: 21px
+        margin-top: 5px
+        span
+            color: black
+        &:first-child
+            margin-top: 0
+    &__close
+        text-align: center
+        font-size: 14px
+        line-height: 14px
+        color: red
+        text-decoration: underline
+        text-transform: uppercase
+        position: absolute
+        bottom: 16px
+        text-align: center
+        width: 100%
+        &:hover
+            cursor: pointer
