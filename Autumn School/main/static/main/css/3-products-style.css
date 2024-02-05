@@ -1,0 +1,257 @@
+@media (min-width: 1440px) {
+    .products {
+        width: 100%;
+        height: auto;
+        margin-bottom: 120px;
+    }
+
+
+
+    .products__navi_panel {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 430px;
+        height: 32px;
+        margin: 0 auto 44px auto;
+    }
+
+
+
+    .products__navi_panel__item {
+        height: 30px;
+        width: auto;
+        padding: 0px 10px;
+        border: 1px solid #181818;
+        background-color: white;
+        border-radius: 20px;
+
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 30px;
+        user-select: none;
+        color: #181818;
+    }
+
+
+    .products__imgs {
+        display: grid;
+        width: 1160px;
+        height: auto;
+        margin: 0 auto;
+        grid-template-columns: 560px 560px;
+        grid-template-rows: repeat(auto-fit);
+        grid-gap: 40px;
+    }
+
+
+    .img1 {
+        width: 1160px;
+        height: 460px;
+        grid-column: 1/2;
+    }
+
+    .img2 {
+        width: 560px;
+        height: 400px;
+        grid-row-start: 2;
+    }
+
+    .img3 {
+        width: 560px;
+        height: 400px;
+        grid-row-start: 2;
+    }
+
+    .img4 {
+        width: 1160px;
+        height: 544px;
+        grid-column: 1/2;
+    }
+
+    .img5 {
+        width: 560px;
+        height: 460px;
+        grid-row-start: 4;
+    }
+
+    .img6 {
+        width: 560px;
+        height: 460px;
+        grid-row-start: 4;
+    }
+
+}
+
+
+
+
+@media (max-width: 1439px) and (min-width: 800px) {
+    .products {
+        width: 100%;
+        height: auto;
+        margin-bottom: 60px;
+    }
+
+
+
+    .products__navi_panel {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 430px;
+        height: 32px;
+        margin: 0 auto 44px auto;
+    }
+
+
+
+    .products__navi_panel__item {
+        height: 30px;
+        width: auto;
+        padding: 0px 10px;
+        border: 1px solid #181818;
+        background-color: white;
+        border-radius: 20px;
+
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 30px;
+        user-select: none;
+        color: #181818;
+    }
+
+
+
+    .products__imgs {
+        display: grid;
+        width: 800px;
+        height: auto;
+        margin: 0 auto;
+        grid-template-columns: 380px;
+        grid-template-rows: 318px 272px 375px 312px;
+        grid-gap: 40px;
+    }
+
+
+    .img1 {
+        width: 800px;
+        height: 318px;
+        grid-column: 1/2;
+    }
+
+    .img2 {
+        width: 380px;
+        height: 272px;
+        grid-row-start: 2;
+    }
+
+    .img3 {
+        width: 380px;
+        height: 272px;
+        grid-row-start: 2;
+    }
+
+    .img4 {
+        width: 800px;
+        height: 375px;
+        grid-column: 1/2;
+    }
+
+    .img5 {
+        width: 380px;
+        height: 312px;
+        grid-row-start: 4;
+    }
+
+    .img6 {
+        width: 380px;
+        height: 312px;
+        grid-row-start: 4;
+    }
+}
+
+
+
+
+@media (max-width: 799px) {
+    .products {
+        width: 100%;
+        height: auto;
+        margin-bottom: 80px;
+    }
+
+
+
+    .products__navi_panel {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 320px;
+        height: 32px;
+        margin: 0 auto 30px auto;
+    }
+
+
+
+    .products__navi_panel__item {
+        height: 26px;
+        width: auto;
+        padding: 0px 6px;
+        border: 1px solid #181818;
+        background-color: white;
+        border-radius: 18px;
+
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 26px;
+        user-select: none;
+        color: #181818;
+    }
+
+
+
+    .products__imgs {
+        display: grid;
+        max-width: 400px;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-row-gap: 20px;
+    }
+
+
+
+    .img1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .img2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .img3 {
+        width: 100%;
+        height: auto;
+    }
+
+    .img4 {
+        width: 100%;
+        height: auto;
+    }
+
+    .img5 {
+        width: 100%;
+        height: auto;
+    }
+
+    .img6 {
+        width: 100%;
+        height: auto;
+    }
+}
+

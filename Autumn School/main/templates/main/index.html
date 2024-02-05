@@ -1,0 +1,298 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Autumn School</title>
+
+    <link rel="stylesheet" href="{% static 'main/css/1-index.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/2-header-style.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/3-products-style.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/3-products-filter.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/4-about-style.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/5-services-style.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/6-price-style.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/7-faq-style.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/8-request-style.css' %}">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+
+        <header>
+
+            <nav>
+                <a href="#part3"><div class="nav__point">Услуги</div></a>
+                <a href="#part1"><div class="nav__point">Работы</div></a>
+                <a href="#part4"><div class="nav__point">Процесс</div></a>
+                <a href="#part2"><div class="nav__point">Обо мне</div></a>
+                <a href="#part5"><div class="nav__point">Контакты</div></a>
+            </nav>
+
+            <h1 class="header__headline">Сайты на Тильде, которые убеждают и продают</h1>
+
+            <p class="header__underline">
+                Изучаем ваш бизнес. Узнаем, что важно клиентам,
+                как вызвать доверие и довести до заявки или покупки.
+            </p>
+
+            <div class="header__button_container">
+                <a href=""><div class="header__button_container__button1">Связаться в Telegram</div></a>
+
+                <a href=""><div class="header__button_container__button2"><img src="{% static 'main/icons/ImgPlay.png' %}" alt=""><p>Видеопортфолио</p></div></a>
+            </div>
+
+        </header>
+
+
+        <section class="products" id="part1">
+
+            <div class="products__navi_panel">
+                <div class="products__navi_panel__item products__navi_panel__item-act fOne" onClick="ImgFilter('.fOne', '', '')">Все</div>
+                <div class="products__navi_panel__item products__navi_panel__item-pass fTwo" onClick="ImgFilter('.fTwo', '.img2', '.img3')">Сайт под ключ</div>
+                <div class="products__navi_panel__item products__navi_panel__item-pass fThree" onClick="ImgFilter('.fThree', '.img1', '.img5')">Разработка</div>
+                <div class="products__navi_panel__item products__navi_panel__item-pass fFour" onClick="ImgFilter('.fFour', '.img4', '.img6')">Дизайн</div>
+            </div>
+
+            <div class="products__imgs">
+                <img src="{% static 'main/img/1.png' %}" alt="Picture" class="products__imgs__item img1">
+                <img src="{% static 'main/img/2.png' %}" alt="Picture" class="products__imgs__item img2">
+                <img src="{% static 'main/img/3.png' %}" alt="Picture" class="products__imgs__item img3">
+                <img src="{% static 'main/img/4.png' %}" alt="Picture" class="products__imgs__item img4">
+                <img src="{% static 'main/img/5.png' %}" alt="Picture" class="products__imgs__item img5">
+                <img src="{% static 'main/img/6.png' %}" alt="Picture" class="products__imgs__item img6">
+            </div>
+
+        </section>
+
+
+        <section class="about" id="part2">
+
+            <img src="{% static 'main/img/ImgAbout.jpg' %}" alt="" class="about__img">
+
+            <div class="about__description">
+                <p class="about__description__headline">Designer & Developer</p>
+                <p class="about__description__text">
+                    Меня зовут Kirill. За 2 года создания сайтов я not (основал свою студию) and not (собрал людей,
+                    готовых к плотной работе).
+                </p>
+                <p class="about__description__text">
+                    not (Запустили лендинг и б2б продукт для UFC. Работали с ВШЭ и МИЭМом. Запустили множество
+                    эвентовых проектов и брендинг. Готовы забирать в команду лучших, прокачивать их компетенции) and
+                    взращивать русское айти комьюнити.
+                </p>
+
+                <div class="about__description__achieve">
+                    <div class="about__description__achieve__element">
+                        <p class="about__description__achieve__element__headline">1+</p>
+                        <p class="about__description__achieve__element__text">Сайтов запустили</p>
+                    </div>
+
+                    <div class="about__description__achieve__element">
+                        <p class="about__description__achieve__element__headline">100%</p>
+                        <p class="about__description__achieve__element__text">Выполнено в срок</p>
+                    </div>
+
+                    <div class="about__description__achieve__element">
+                        <p class="about__description__achieve__element__headline">1+</p>
+                        <p class="about__description__achieve__element__text">Лет опыта</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Change! -->
+        <section class="services" id="part3">
+
+            <p class="services__headline">Услуги</p>
+
+            <div class="services__objects">
+                {% with c=1 %}
+                {% for i in posts %}
+                    <div class="services__objects__element">
+                        <p class="services__objects__element__num">{{ c }}</p>
+                        <p class="services__objects__element__headline">{{ i.title }}</p>
+                        <p class="services__objects__element__text">{{ i.description }}</p>
+                        <div class="services__objects__element__line"></div>
+                        <p class="services__objects__element__price">От {{ i.price }} ₽</p>
+                    </div>
+                {% endfor %}
+                {% endwith %}
+
+            </div>
+
+        </section>
+
+
+        <section class="price" id="part4">
+
+            <p class="price__headline">Подсчет стоимости</p>
+
+            <div class="price__calc">
+
+                <form action="" method="post">
+
+                    <select name="" class="price__calc__input_text">
+                        <option disabled selected>Тип работы</option>
+                        <option value="">Вариант №1</option>
+                        <option value="">Вариант №2</option>
+                    </select>
+
+                    <select name="" class="price__calc__input_text">
+                        <option disabled selected>Насколько большой проект</option>
+                        <option value="">Вариант №1</option>
+                        <option value="">Вариант №2</option>
+                    </select>
+
+                    <div class="price__calc__input_point">
+                        <input type="checkbox" class="price__calc__input_point__square">
+                        <p class="price__calc__input_point__text">
+                            Да, я слышал про осеннюю школу. Интересно, а после нее будет ЕГЭ?
+                        </p>
+                    </div>
+
+                    <!-- <input type="submit" class="price__calc__input__button" value="Рассчитать стоимость"> -->
+                    <div class="price__calc__input__button" onClick="CountPrice()">Рассчитать стоимость</div>
+                </form>
+
+            </div>
+
+            <div class="price__description_calc-pass">
+                <p class="price__description_calc__headline">Примерный подсчет:</p>
+                <p class="price__description_calc__annotation">Стоимость</p>
+                <p class="price__description_calc__content">От 120 000 ₽</p>
+                <p class="price__description_calc__annotation">Примерные сроки</p>
+                <p class="price__description_calc__content">14 рабочих дней</p>
+                <a href=""><div class="price__description_calc__discuss_btn">Обсудить проект</div></a>
+            </div>
+
+        </section>
+
+
+        <section class="faq" id="part5">
+
+            <p class="faq__headline">Вопрос-ответ</p>
+
+            <div class="faq__content" onClick="AddInf('#btn1', '#add_inf_1')">
+                <div class="faq__content__preview">
+                    <p class="faq__content__preview__name">Делаете только дизайн?</p>
+                    <img src="{% static 'main/icons/Open-Close_Btn.svg' %}" alt="" class="faq__content__preview__oc-btn" id="btn1">
+                </div>
+
+                <div class="faq__content__additional_inf" id="add_inf_1">
+
+                </div>
+            </div>
+
+            <div class="faq__content"  onClick="AddInf('#btn2', '#add_inf_2')">
+                <div class="faq__content__preview">
+                    <p class="faq__content__preview__name">Почему Тильда?</p>
+                    <img src="{% static 'main/icons/Open-Close_Btn.svg' %}" alt="" class="faq__content__preview__oc-btn" id="btn2">
+                </div>
+
+                <div class="faq__content__additional_inf" id="add_inf_2"></div>
+
+            </div>
+
+            <div class="faq__content" onClick="AddInf('#btn3', '#add_inf_3')">
+                <div class="faq__content__preview">
+                    <p class="faq__content__preview__name">Какие сроки?</p>
+                    <img src="{% static 'main/icons/Open-Close_Btn.svg' %}" alt="" class="faq__content__preview__oc-btn" id="btn3">
+                </div>
+
+                <div class="faq__content__additional_inf" id="add_inf_3"></div>
+
+            </div>
+
+            <div class="faq__content" onClick="AddInf('#btn4', '#add_inf_4')">
+                <div class="faq__content__preview">
+                    <p class="faq__content__preview__name">Как происходит оплата?</p>
+                    <img src="{% static 'main/icons/Open-Close_Btn.svg' %}" alt="" class="faq__content__preview__oc-btn" id="btn4">
+                </div>
+
+                <div class="faq__content__additional_inf" id="add_inf_4"></div>
+
+            </div>
+
+            <div class="faq__content" onClick="AddInf('#btn5', '#add_inf_5')">
+                <div class="faq__content__preview">
+                    <p class="faq__content__preview__name">Сколько правок можно внести?</p>
+                    <img src="{% static 'main/icons/Open-Close_Btn.svg' %}" alt="" class="faq__content__preview__oc-btn" id="btn5">
+                </div>
+
+                <div class="faq__content__additional_inf" id="add_inf_5"></div>
+
+            </div>
+
+            <div class="faq__content"  onClick="AddInf('#btn6', '#add_inf_6')">
+                <div class="faq__content__preview">
+                    <p class="faq__content__preview__name">Работаете со срочными проектами?</p>
+                    <img src="{% static 'main/icons/Open-Close_Btn.svg' %}" alt="" class="faq__content__preview__oc-btn" id="btn6">
+                </div>
+
+                <div class="faq__content__additional_inf" id="add_inf_6"></div>
+
+            </div>
+
+        </section>
+
+
+        <section class="request">
+
+            <p class="request__headline">Оставьте заявку</p>
+
+            <p class="request__underline">Я сам напишу вам и сообщу все детали</p>
+
+            <div class="request__content">
+
+                <div class="request__content__form">
+                    <form action="{% url 'main' %}" method="post">
+                        {% csrf_token %}
+                        {{ form.name }}
+                        {{ form.surname }}
+                        {{ form.type_serv }}
+                        {{ form.comment }}
+                        <button type="submit" class="request__content__form__button">Отправить собщение</button>
+                        <div>{{ form.non_field_errors }}</div>
+
+                        <!--
+                            <input name="name" type="text" placeholder="Имя" maxlength="30" class="request__content__form__input" required>
+                        <input name="surname" type="text" placeholder="Фамилия" maxlength="30" class="request__content__form__input" required>
+                        <select name="type_serv" class="request__content__form__choose" required>
+                            <option value="" disabled selected>Услуга</option>
+                            <option value="">Услуга №1</option>
+                            <option value="">Услуга №2</option>
+                        </select>
+                        <textarea name="comment" placeholder="Комментарий" class="request__content__form__large_input"></textarea>
+                        -->
+                    </form>
+                </div>
+
+                <div class="request__content__networks">
+                    <a href=""><img src="{% static 'main/icons/NetWork1.svg' %}" alt=""></a>
+                    <a href=""><img src="{% static 'main/icons/NetWork2.svg' %}" alt=""></a>
+                    <a href=""><img src="{% static 'main/icons/NetWork3.svg' %}" alt=""></a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer></footer>
+
+    </div>
+
+    <script type="text/javascript" src="{% static 'main/js/GetAddInf.js' %}"></script>
+</body>
+</html>
